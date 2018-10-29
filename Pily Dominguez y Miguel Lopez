@@ -1,0 +1,31 @@
+var hacker1 = "Pedro"
+
+console.log("The driver name is " + hacker1)
+
+var hacker2 = prompt("What´s your name ?")
+console.log("Driver´s name is " + hacker2)
+
+//Conditionals
+
+if (hacker1.length > hacker2.length ) console.log("The longest name is " + hacker1)
+else if(hacker1.length<hacker2.length) console.log( hacker2 + " got the longest name with "+hacker2.length +" characters")
+else{
+  console.log("Wow, you both got equaly long names, "+hacker1.length + " characters")
+}
+
+//Loops
+
+for(letter = 0; letter < hacker2.length; letter++){
+  console.log(hacker2[letter].toUpperCase())
+}
+
+
+for(l = hacker2.length-1; l >= 0; l--){
+  console.log(hacker2[l])
+}
+
+
+
+if (hacker1 > hacker2 ) console.log(hacker1 + " goes first")
+else if(hacker1 <hacker2) console.log( hacker2 + " goes first")
+else if(hacker1 = hacker2) console.log("Wow, you both got equaly long names, "+hacker1.length + " characters")
